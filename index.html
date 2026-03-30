@@ -15,198 +15,86 @@
   --t:#1a1a1a;--tm:#6b6b6b;--tl:#9a9a9a;
 }
 body{font-family:'DM Sans',sans-serif;color:var(--t);background:var(--warm);margin:0}
-
-/* ---- NAV ---- */
-.ifafa-nav{
-  background:var(--navy);padding:0 32px;
-  display:flex;align-items:center;justify-content:space-between;
-  height:58px;position:sticky;top:0;z-index:200;
-}
+.ifafa-nav{background:var(--navy);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:58px;position:sticky;top:0;z-index:200;}
 .ifafa-nav-brand{display:flex;align-items:center;gap:11px;text-decoration:none}
-.ifafa-nav-logo{
-  width:38px;height:38px;border-radius:50%;background:white;
-  display:flex;align-items:center;justify-content:center;
-  font-size:7px;font-weight:700;color:var(--navy);text-align:center;line-height:1.25;flex-shrink:0;
-}
+.ifafa-nav-logo{width:38px;height:38px;border-radius:50%;background:white;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:700;color:var(--navy);text-align:center;line-height:1.25;flex-shrink:0;}
 .ifafa-nav-name{font-family:'Lora',serif;font-size:14px;color:white;font-weight:500}
 .ifafa-nav-tag{font-size:10px;color:rgba(255,255,255,.5);margin-top:1px}
 .ifafa-nav-links{display:flex;gap:6px;align-items:center}
-.ifafa-nav-link{
-  color:rgba(255,255,255,.75);font-size:12px;text-decoration:none;
-  padding:6px 12px;border-radius:6px;transition:all .15s;white-space:nowrap;
-}
+.ifafa-nav-link{color:rgba(255,255,255,.75);font-size:12px;text-decoration:none;padding:6px 12px;border-radius:6px;transition:all .15s;white-space:nowrap;}
 .ifafa-nav-link:hover{color:white;background:rgba(255,255,255,.1)}
 .ifafa-nav-link.active{color:white;background:rgba(255,255,255,.15);font-weight:500}
-.ifafa-nav-link.back{
-  color:rgba(255,255,255,.6);font-size:11px;
-  border:1px solid rgba(255,255,255,.2);margin-right:4px;
-}
+.ifafa-nav-link.back{color:rgba(255,255,255,.6);font-size:11px;border:1px solid rgba(255,255,255,.2);margin-right:4px;}
 .ifafa-nav-link.back:hover{color:white;border-color:rgba(255,255,255,.4)}
-
-/* ---- HERO ---- */
-.ifafa-faq-hero{
-  background:var(--navy);padding:40px 40px 0;position:relative;overflow:hidden;
-}
-.ifafa-faq-hero::before{
-  content:'';position:absolute;right:-40px;top:-40px;
-  width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.04);
-}
-.ifafa-faq-hero::after{
-  content:'';position:absolute;right:50px;top:30px;
-  width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.04);
-}
-.ifafa-hero-eyebrow{
-  font-size:11px;font-weight:500;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--sage-mid);margin-bottom:10px;
-}
-.ifafa-hero-title{
-  font-family:'Lora',serif;font-size:clamp(22px,3.5vw,32px);
-  font-weight:400;color:white;line-height:1.25;margin-bottom:8px;
-}
+.ifafa-faq-hero{background:var(--navy);padding:40px 40px 0;position:relative;overflow:hidden;}
+.ifafa-faq-hero::before{content:'';position:absolute;right:-40px;top:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.04);}
+.ifafa-faq-hero::after{content:'';position:absolute;right:50px;top:30px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.04);}
+.ifafa-hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-mid);margin-bottom:10px;}
+.ifafa-hero-title{font-family:'Lora',serif;font-size:clamp(22px,3.5vw,32px);font-weight:400;color:white;line-height:1.25;margin-bottom:8px;}
 .ifafa-hero-title em{font-style:italic;color:#a8d4f5}
-.ifafa-hero-sub{
-  font-size:14px;color:rgba(255,255,255,.65);
-  max-width:520px;line-height:1.7;margin-bottom:28px;
-}
-
-/* ---- SEARCH DOCK ---- */
-.ifafa-search-dock{
-  background:white;border-radius:14px 14px 0 0;padding:20px 24px 6px;position:relative;
-}
+.ifafa-hero-sub{font-size:14px;color:rgba(255,255,255,.65);max-width:520px;line-height:1.7;margin-bottom:28px;}
+.ifafa-search-dock{background:white;border-radius:14px 14px 0 0;padding:20px 24px 6px;position:relative;}
 .ifafa-search-label{font-size:12px;font-weight:500;color:var(--tm);margin-bottom:8px}
 .ifafa-search-row{display:flex;gap:10px;align-items:center}
 .ifafa-search-wrap{flex:1;position:relative}
 .ifafa-search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.35;pointer-events:none}
-.ifafa-search-input{
-  width:100%;height:44px;border:1.5px solid var(--warm-b);border-radius:10px;
-  padding:0 14px 0 40px;font-size:14px;font-family:'DM Sans',sans-serif;
-  color:var(--t);background:var(--warm);outline:none;transition:border-color .15s,background .15s;
-}
+.ifafa-search-input{width:100%;height:44px;border:1.5px solid var(--warm-b);border-radius:10px;padding:0 14px 0 40px;font-size:14px;font-family:'DM Sans',sans-serif;color:var(--t);background:var(--warm);outline:none;transition:border-color .15s,background .15s;}
 .ifafa-search-input:focus{border-color:var(--navy-mid);background:white}
-.ifafa-search-btn{
-  height:44px;padding:0 22px;background:var(--navy);color:white;border:none;
-  border-radius:10px;font-size:13px;font-weight:500;font-family:'DM Sans',sans-serif;
-  cursor:pointer;white-space:nowrap;transition:background .15s;
-}
+.ifafa-search-btn{height:44px;padding:0 22px;background:var(--navy);color:white;border:none;border-radius:10px;font-size:13px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;transition:background .15s;}
 .ifafa-search-btn:hover{background:var(--navy-mid)}
 .ifafa-search-hints{font-size:11px;color:var(--tl);padding:10px 0 14px;line-height:1.6}
 .ifafa-search-hints span{color:var(--navy-mid);cursor:pointer;border-bottom:1px dashed currentColor;margin:0 3px}
 .ifafa-search-hints span:hover{color:var(--navy)}
-.ifafa-search-drop{
-  display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);
-  background:white;border:1px solid var(--warm-b);border-radius:10px;
-  overflow:hidden;z-index:100;box-shadow:0 4px 16px rgba(14,61,110,.1);
-}
+.ifafa-search-drop{display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);background:white;border:1px solid var(--warm-b);border-radius:10px;overflow:hidden;z-index:100;box-shadow:0 4px 16px rgba(14,61,110,.1);}
 .ifafa-search-drop.active{display:block}
-.ifafa-sr-item{
-  padding:11px 16px;font-size:13px;color:var(--t);cursor:pointer;
-  border-bottom:1px solid var(--warm-b);
-  display:flex;align-items:center;justify-content:space-between;gap:10px;
-  transition:background .1s;
-}
+.ifafa-sr-item{padding:11px 16px;font-size:13px;color:var(--t);cursor:pointer;border-bottom:1px solid var(--warm-b);display:flex;align-items:center;justify-content:space-between;gap:10px;transition:background .1s;}
 .ifafa-sr-item:last-child{border-bottom:none}
 .ifafa-sr-item:hover{background:var(--sky-light)}
 .ifafa-sr-q{flex:1;line-height:1.4}
-.ifafa-sr-cat{
-  font-size:10px;color:var(--tl);background:var(--warm);
-  border-radius:4px;padding:2px 7px;white-space:nowrap;flex-shrink:0;
-}
+.ifafa-sr-cat{font-size:10px;color:var(--tl);background:var(--warm);border-radius:4px;padding:2px 7px;white-space:nowrap;flex-shrink:0;}
 mark{background:#fff2b3;color:var(--navy);border-radius:2px;padding:0 1px}
-
-/* ---- BODY ---- */
 .ifafa-faq-body{background:white;padding:24px 40px}
-
-/* ---- TABS ---- */
 .ifafa-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-.ifafa-tab{
-  padding:7px 16px;border-radius:20px;font-size:13px;color:var(--tm);
-  background:var(--warm);border:1px solid var(--warm-b);
-  cursor:pointer;transition:all .15s;white-space:nowrap;font-family:'DM Sans',sans-serif;
-}
+.ifafa-tab{padding:7px 16px;border-radius:20px;font-size:13px;color:var(--tm);background:var(--warm);border:1px solid var(--warm-b);cursor:pointer;transition:all .15s;white-space:nowrap;font-family:'DM Sans',sans-serif;}
 .ifafa-tab:hover{background:var(--sky-light);border-color:#b5d4f4;color:var(--navy-mid)}
 .ifafa-tab.active{background:var(--navy);color:white;border-color:var(--navy);font-weight:500}
-
-/* ---- SECTION LABEL ---- */
-.ifafa-section-lbl{
-  font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--tl);margin-bottom:14px;
-  display:flex;align-items:center;justify-content:space-between;
-}
+.ifafa-section-lbl{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--tl);margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;}
 .ifafa-section-lbl span{font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--tl)}
-
-/* ---- FAQ ACCORDION ---- */
 .ifafa-faq{border:1px solid var(--warm-b);border-radius:10px;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
 .ifafa-faq:hover{border-color:var(--warm-d)}
 .ifafa-faq.open{border-color:var(--navy-mid)}
-.ifafa-faq-question{
-  display:flex;align-items:flex-start;justify-content:space-between;
-  gap:14px;padding:15px 16px;cursor:pointer;background:white;transition:background .1s;
-}
+.ifafa-faq-question{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:15px 16px;cursor:pointer;background:white;transition:background .1s;}
 .ifafa-faq.open .ifafa-faq-question{background:var(--sky-light)}
 .ifafa-faq-q-text{font-size:14px;font-weight:400;color:var(--t);line-height:1.45;flex:1}
 .ifafa-faq.open .ifafa-faq-q-text{color:var(--navy);font-weight:500}
-.ifafa-faq-stage{
-  font-size:10px;color:var(--tl);background:var(--warm);border-radius:4px;
-  padding:3px 7px;white-space:nowrap;flex-shrink:0;margin-top:2px;
-  border:1px solid var(--warm-b);display:none;
-}
+.ifafa-faq-stage{font-size:10px;color:var(--tl);background:var(--warm);border-radius:4px;padding:3px 7px;white-space:nowrap;flex-shrink:0;margin-top:2px;border:1px solid var(--warm-b);display:none;}
 .search-active .ifafa-faq-stage{display:inline-block}
-.ifafa-toggle{
-  width:24px;height:24px;border-radius:50%;background:var(--warm);
-  border:1px solid var(--warm-b);display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;margin-top:1px;transition:all .18s;position:relative;
-}
+.ifafa-toggle{width:24px;height:24px;border-radius:50%;background:var(--warm);border:1px solid var(--warm-b);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .18s;position:relative;}
 .ifafa-faq.open .ifafa-toggle{background:var(--navy);border-color:var(--navy)}
-.ifafa-toggle::before,.ifafa-toggle::after{
-  content:'';position:absolute;background:var(--tm);border-radius:1px;transition:all .2s;
-}
+.ifafa-toggle::before,.ifafa-toggle::after{content:'';position:absolute;background:var(--tm);border-radius:1px;transition:all .2s;}
 .ifafa-toggle::before{width:11px;height:1.5px}
 .ifafa-toggle::after{width:1.5px;height:11px}
-.ifafa-faq.open .ifafa-toggle::before,
-.ifafa-faq.open .ifafa-toggle::after{background:white}
+.ifafa-faq.open .ifafa-toggle::before,.ifafa-faq.open .ifafa-toggle::after{background:white}
 .ifafa-faq.open .ifafa-toggle::after{transform:rotate(90deg)}
-.ifafa-faq-answer{
-  display:none;padding:15px 16px 16px;font-size:14px;color:var(--tm);
-  line-height:1.75;background:var(--sky-light);border-top:1px solid var(--sky);
-}
+.ifafa-faq-answer{display:none;padding:15px 16px 16px;font-size:14px;color:var(--tm);line-height:1.75;background:var(--sky-light);border-top:1px solid var(--sky);}
 .ifafa-faq.open .ifafa-faq-answer{display:block}
 .ifafa-faq-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:12px}
 .ifafa-tags{display:flex;gap:6px;flex-wrap:wrap}
 .ifafa-tag{font-size:10px;padding:3px 9px;border-radius:4px;background:white;border:1px solid var(--warm-b);color:var(--tm)}
 .ifafa-learn{font-size:13px;color:var(--navy-mid);font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 .ifafa-learn:hover{text-decoration:underline}
-
-/* ---- NO RESULTS ---- */
 .ifafa-no-results{text-align:center;padding:40px 20px;font-size:14px;color:var(--tl)}
 .ifafa-no-results strong{display:block;font-size:16px;color:var(--tm);margin-bottom:6px;font-weight:500}
-
-/* ---- HELP BAND ---- */
-.ifafa-help-band{
-  background:var(--navy);padding:28px 40px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
-  margin:28px -40px -24px;
-}
+.ifafa-help-band{background:var(--navy);padding:28px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:28px -40px -24px;}
 .ifafa-help-title{font-family:'Lora',serif;font-size:18px;color:white;font-weight:400;margin-bottom:5px}
 .ifafa-help-sub{font-size:13px;color:rgba(255,255,255,.6);line-height:1.6}
-.ifafa-help-btn{
-  background:white;color:var(--navy);border:none;border-radius:10px;
-  padding:12px 24px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;
-  cursor:pointer;white-space:nowrap;flex-shrink:0;transition:background .15s;
-  text-decoration:none;display:inline-block;
-}
+.ifafa-help-btn{background:white;color:var(--navy);border:none;border-radius:10px;padding:12px 24px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:background .15s;text-decoration:none;display:inline-block;}
 .ifafa-help-btn:hover{background:var(--sky-light)}
-
-/* ---- FOOTER ---- */
-.ifafa-footer{
-  background:#0a2f56;padding:18px 32px;
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
-}
+.ifafa-footer{background:#0a2f56;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
 .ifafa-footer-brand{font-family:'Lora',serif;font-size:13px;color:rgba(255,255,255,.6)}
 .ifafa-footer-links{display:flex;gap:20px;flex-wrap:wrap}
 .ifafa-footer-links a{font-size:12px;color:rgba(255,255,255,.4);text-decoration:none;transition:color .15s}
 .ifafa-footer-links a:hover{color:rgba(255,255,255,.75)}
-
-/* ---- RESPONSIVE ---- */
 @media(max-width:640px){
   .ifafa-nav{padding:0 16px}
   .ifafa-nav-tag{display:none}
@@ -221,10 +109,6 @@ mark{background:#fff2b3;color:var(--navy);border-radius:2px;padding:0 1px}
 </style>
 </head>
 <body>
-
-<!-- ============================================================
-     IFAFA FAQ PAGE — STANDALONE (GitHub Pages version)
-     ============================================================ -->
 
 <nav class="ifafa-nav">
   <a class="ifafa-nav-brand" href="https://ifafa.org">
@@ -284,7 +168,7 @@ mark{background:#fff2b3;color:var(--navy);border-radius:2px;padding:0 1px}
       <div class="ifafa-help-title">Still need help?</div>
       <div class="ifafa-help-sub">Can't find your answer? Our committee is here for you.</div>
     </div>
-    <a class="ifafa-help-btn" href="https://YOUR-WORDPRESS-SITE.com/contact/">Contact IFAFA</a>
+    <a class="ifafa-help-btn" href="mailto:info@ifafa.ie">Contact IFAFA</a>
   </div>
 </div>
 
@@ -292,7 +176,9 @@ mark{background:#fff2b3;color:var(--navy);border-radius:2px;padding:0 1px}
   <div class="ifafa-footer-brand">IFAFA — Irish Foreign Affairs Family Association</div>
   <div class="ifafa-footer-links">
     <a href="https://ifafa.org">Home</a>
-  <a class="ifafa-help-btn" href="mailto:info@ifafa.ie">Contact IFAFA</a>
+    <a href="https://ifafa.org/advice-and-resources/">Advice &amp; Resources</a>
+    <a href="https://ifafa.org/about-ifafa/">About IFAFA</a>
+    <a href="mailto:info@ifafa.ie">Contact</a>
     <a href="#">© 2026 IFAFA</a>
   </div>
 </footer>
@@ -300,33 +186,33 @@ mark{background:#fff2b3;color:var(--navy);border-radius:2px;padding:0 1px}
 <script>
 var IFAFA_FAQS = [
   {id:'q1',stage:'Before you go',q:'What should I sort out before leaving Ireland?',a:'Start planning as early as possible. Key things to arrange include: enrolling on MyGovID, checking your pension entitlements and PRSI record, reviewing school options for children, arranging car and home insurance, and making sure wills and power of attorney are up to date. IFAFA\'s pre-posting checklist covers all of this in one place.',tags:['Pre-posting','Checklist'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
-  {id:'q2',stage:'Before you go',q:'What is the Children’s Foreign Allowance (CFA)?',a:'Children’s Foreign Allowance is payable whether your child accompanies you on posting or remains in Ireland. It is intended to help with additional child-related costs not covered under other schemes (e.g. school transport or supplementary educational needs)',tags:['Children','Pre-posting'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
+  {id:'q2',stage:'Before you go',q:"What is the Children's Foreign Allowance (CFA)?",a:"Children's Foreign Allowance is payable whether your child accompanies you on posting or remains in Ireland. It is intended to help with additional child-related costs not covered under other schemes (e.g. school transport or supplementary educational needs).",tags:['Children','Pre-posting'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
   {id:'q3',stage:'Before you go',q:'What resources help me prepare my family for the move?',a:'IFAFA has a pre-posting checklist covering pensions, education, child transitions, and self-administration essentials. Jigsaw also offers a parent webinar on supporting children through transitions, and there are recommended books on third culture kids available in the Resources section.',tags:['Pre-posting','Children','Mental health'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
   {id:'q4',stage:'While abroad',q:'Am I still tax resident in Ireland while on posting?',a:'DFAT officers on official posting retain Irish tax residency status in most circumstances, but the rules are complex and depend on the length of posting and personal circumstances. IFAFA strongly recommends taking independent tax advice before and during your posting.',tags:['Tax','While abroad'],link:false,linkUrl:''},
-  {id:'q5',stage:'While abroad',q:"How do I renew my driver's licence while on posting?",a:"You can renew your Irish driver's licence from abroad. The process involves applying through the NDLS (National Driver Licence Service) and may require documentation from the Irish Embassy or Mission at your posting. See IFAFA\'s Car Matters guidance note (February 2026) for the full process.",tags:['Driving','While abroad'],link:true,linkUrl:'https://YOUR-WORDPRESS-SITE.com/advice-and-resources/going-on-a-posting/'},
+  {id:'q5',stage:'While abroad',q:"How do I renew my driver's licence while on posting?",a:"You can renew your Irish driver's licence from abroad. The process involves applying through the NDLS (National Driver Licence Service) and may require documentation from the Irish Embassy or Mission at your posting. See IFAFA's Car Matters guidance note (February 2026) for the full process.",tags:['Driving','While abroad'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
   {id:'q6',stage:'While abroad',q:'What car insurance options are available when abroad?',a:'Your Irish car insurance may not cover extended periods abroad. Many families take out local insurance at post. Some Irish insurers offer overseas extensions — check with your provider before you go. See the Car Matters guidance note for country-specific tips.',tags:['Insurance','Driving'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
   {id:'q7',stage:'While abroad',q:'Can I access Irish public services online while abroad?',a:'Yes. Most Irish public services are accessible online. MyGovID is your main gateway — set this up before you leave. Revenue, the NDLS, and social welfare services all have online portals. The DFAT HR team can also assist with certain administrative processes.',tags:['Admin','While abroad'],link:false,linkUrl:''},
   {id:'q8',stage:'While abroad',q:'What supports are available for spouses and partners abroad?',a:'IFAFA is your primary support network. We connect families through events, the newsletter, and the EUFASA network of European diplomatic family associations. Jigsaw provides mental health supports including an e-learning tool developed specifically with IFAFA.',tags:['Wellbeing','Mental health'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
   {id:'q9',stage:'Children',q:'What should I do to prepare for school re-entry in Ireland?',a:'Start planning early using your known posting end-date. Fixed application windows mean there is no guarantee of your child\'s previous school place — this applies equally to all families under Irish admissions legislation. HR Abroad can provide a letter confirming your overseas service to support applications.',tags:['Children','Schools','Return'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
-  {id:'q10',stage:'Children',q:'Will my child be guaranteed their previous school place on return?',a:'No. Current admissions legislation does not provide special provision for civil servants returning from posting. All applications are assessed under each school's published Admissions Policy. IFAFA is actively working on advocacy in this area.',tags:['Children','Schools','Advocacy'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
-  {id:'q11',stage:'Children',q:"Are financial supports available for children's education while on posting?",a:'Yes. The Childcare & School Fees Assistance Scheme covers school fees at post, boarding school fees in Ireland where children remain home, and language tuition in both Irish and local languages. Children\'s Foreign Allowance (CFA) is also payable whether your child accompanies you or stays in Ireland.',tags:['Children','Allowances','Schools'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
+  {id:'q10',stage:'Children',q:'Will my child be guaranteed their previous school place on return?',a:"No. Current admissions legislation does not provide special provision for civil servants returning from posting. All applications are assessed under each school's published Admissions Policy. IFAFA is actively working on advocacy in this area.",tags:['Children','Schools','Advocacy'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
+  {id:'q11',stage:'Children',q:"Are financial supports available for children's education while on posting?",a:"Yes. The Childcare & School Fees Assistance Scheme covers school fees at post, boarding school fees in Ireland where children remain home, and language tuition in both Irish and local languages. Children's Foreign Allowance (CFA) is also payable whether your child accompanies you or stays in Ireland.",tags:['Children','Allowances','Schools'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
   {id:'q12',stage:'Children',q:'Will taking the IB instead of the Leaving Cert affect university entry?',a:'Possibly. IB results must be converted to Leaving Cert points for CAO applications and current conversion methods may disadvantage IB students. IFAFA has established a working group to examine this and engage with relevant stakeholders.',tags:['Children','IB','CAO','Advocacy'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/third-culture-children/'},
   {id:'q13',stage:'Children',q:'Are there resources to support children through posting transitions?',a:'Yes. Jigsaw offers a parent webinar and self-service mental health resources. IFAFA has also developed an e-learning tool on the experience of third culture kids — available to members. There are also recommended books in the Resources section.',tags:['Children','Mental health','Third culture kids'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/third-culture-children/'},
-  {id:'q14',stage:'Coming home',q:'How do I import a vehicle I purchased abroad?',a:'Importing a vehicle to Ireland involves paying VRT (Vehicle Registration Tax) and potentially customs duties. The process depends on where the car was purchased and how long you owned it. See IFAFA\'s Car Matters guidance note (February 2026) for a step-by-step breakdown.',tags:['Return','Cars'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
-  {id:'q15',stage:'Coming home',q:'What supports exist for returning families?',a:'IFAFA offers guidance through the knowledge base on school re-entry, vehicle import, housing, and pension gaps. The Department's HR team can also assist with administrative transitions. Jigsaw provides mental health resources for families readjusting to life in Ireland.',tags:['Return','Wellbeing'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
-  {id:'q16',stage:'Coming home',q:'What resources help children returning to Ireland from posting?',a:'Jigsaw offers supports specifically for young people navigating repatriation. IFAFA\'s knowledge base includes guidance on school re-entry and social reintegration. The third culture kids e-learning resource developed with Jigsaw is also available to members.',tags:['Return','Children','Mental health'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/third-culture-children/'},
+  {id:'q14',stage:'Coming home',q:'How do I import a vehicle I purchased abroad?',a:"Importing a vehicle to Ireland involves paying VRT (Vehicle Registration Tax) and potentially customs duties. The process depends on where the car was purchased and how long you owned it. See IFAFA's Car Matters guidance note (February 2026) for a step-by-step breakdown.",tags:['Return','Cars'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
+  {id:'q15',stage:'Coming home',q:'What supports exist for returning families?',a:"IFAFA offers guidance through the knowledge base on school re-entry, vehicle import, housing, and pension gaps. The Department's HR team can also assist with administrative transitions. Jigsaw provides mental health resources for families readjusting to life in Ireland.",tags:['Return','Wellbeing'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/coming-home-from-posting/'},
+  {id:'q16',stage:'Coming home',q:'What resources help children returning to Ireland from posting?',a:"Jigsaw offers supports specifically for young people navigating repatriation. IFAFA's knowledge base includes guidance on school re-entry and social reintegration. The third culture kids e-learning resource developed with Jigsaw is also available to members.",tags:['Return','Children','Mental health'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/third-culture-children/'},
   {id:'q17',stage:'Career & money',q:'Will accompanying my partner on posting affect my Irish State Pension?',a:'It may. Time spent abroad can interrupt employment and reduce opportunities to build PRSI contributions. Over multiple postings, this can create gaps that affect eligibility for or the level of the State Pension (Contributory). IFAFA is currently engaging with DFA on potential policy responses.',tags:['Pensions','Career','Advocacy'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/pensions/'},
   {id:'q18',stage:'Career & money',q:'How long can I stay within the Irish PRSI system while working abroad?',a:'This depends on the country of posting. In EEA countries you may remain within Irish PRSI for up to 24 months initially through an A1 Certificate, with possible extension. Different rules apply in bilateral agreement countries and others.',tags:['Pensions','PRSI'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/pensions/'},
-  {id:'q19',stage:'Career & money',q:'Can I work locally while on posting?',a:'In many countries, spouses and partners of diplomatic staff are permitted to work locally under the terms of a bilateral working agreement. The countries covered vary — IFAFA\'s knowledge base includes a list of countries with such agreements with Ireland.',tags:['Career','While abroad'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/partners-spouses-careers/'},
-  {id:'q20',stage:'Career & money',q:'What allowances do we receive while abroad?',a:'Allowances vary depending on the posting location, family composition, and individual circumstances. They typically include a posting allowance, Children\'s Foreign Allowance (CFA), and support under the Childcare & School Fees Assistance Scheme. Contact HR Abroad for your specific entitlements.',tags:['Allowances'],link:false,linkUrl:''},
+  {id:'q19',stage:'Career & money',q:'Can I work locally while on posting?',a:"In many countries, spouses and partners of diplomatic staff are permitted to work locally under the terms of a bilateral working agreement. The countries covered vary — IFAFA's knowledge base includes a list of countries with such agreements with Ireland.",tags:['Career','While abroad'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/partners-spouses-careers/'},
+  {id:'q20',stage:'Career & money',q:'What allowances do we receive while abroad?',a:"Allowances vary depending on the posting location, family composition, and individual circumstances. They typically include a posting allowance, Children's Foreign Allowance (CFA), and support under the Childcare & School Fees Assistance Scheme. Contact HR Abroad for your specific entitlements.",tags:['Allowances'],link:false,linkUrl:''},
   {id:'q21',stage:'Admin & legal',q:'Do I need to be in Ireland for naturalisation residency requirements?',a:'Not necessarily. Spouses and partners of DFAT officers posted abroad may have special provisions regarding residency requirements for naturalisation. IFAFA has been in contact with the Department of Justice on this issue — see the Naturalisation section of the knowledge base for the latest guidance.',tags:['Naturalisation','Admin'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/foreign-born-spouses/'},
   {id:'q22',stage:'Admin & legal',q:'What if I cannot get a police clearance certificate from a previous posting country?',a:'The Department of Justice recognises that obtaining police clearance certificates from some jurisdictions can be difficult or impossible. Where a certificate cannot be secured despite reasonable efforts, alternative supporting documentation may be considered, including correspondence from the Irish Ambassador or Mission.',tags:['Naturalisation','Admin'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/foreign-born-spouses/'},
-  {id:'q23',stage:'Admin & legal',q:'How do I register a birth abroad?',a:'Births abroad to Irish citizens can be registered in the Foreign Births Register. You will need to contact the nearest Irish Embassy or Consulate. The child may also be entitled to Irish citizenship. See IFAFA\'s Births Abroad guidance for a step-by-step guide.',tags:['Births abroad','Admin'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
-  {id:'q24',stage:'Admin & legal',q:'How do I obtain a PPS number for my child born abroad?',a:'You can apply for a PPS number for a child born abroad through the Department of Social Protection. You will need to provide the child's birth certificate and proof of your own Irish identity and address. Applications can be made by post or through your local Intreo office on return to Ireland.',tags:['Births abroad','Admin'],link:false,linkUrl:''},
+  {id:'q23',stage:'Admin & legal',q:'How do I register a birth abroad?',a:"Births abroad to Irish citizens can be registered in the Foreign Births Register. You will need to contact the nearest Irish Embassy or Consulate. The child may also be entitled to Irish citizenship. See IFAFA's Births Abroad guidance for a step-by-step guide.",tags:['Births abroad','Admin'],link:true,linkUrl:'https://ifafa.org/advice-and-resources/going-on-mission/'},
+  {id:'q24',stage:'Admin & legal',q:'How do I obtain a PPS number for my child born abroad?',a:"You can apply for a PPS number for a child born abroad through the Department of Social Protection. You will need to provide the child's birth certificate and proof of your own Irish identity and address. Applications can be made by post or through your local Intreo office on return to Ireland.",tags:['Births abroad','Admin'],link:false,linkUrl:''},
   {id:'q25',stage:'About IFAFA',q:'What is IFAFA?',a:'IFAFA — the Irish Foreign Affairs Family Association — is a member-led organisation supporting the spouses, partners, and families of Irish Department of Foreign Affairs officers serving abroad. We advocate on key issues, provide practical guidance, and build community among families navigating the unique challenges of diplomatic life.',tags:['About IFAFA'],link:false,linkUrl:''},
   {id:'q26',stage:'About IFAFA',q:'How do I become a member?',a:'Membership is open to any spouse, partner, or family member of a serving or former DFAT officer. It is currently free. Register through the IFAFA website to receive login credentials, newsletter access, and invitations to events.',tags:['About IFAFA','Membership'],link:false,linkUrl:''},
   {id:'q27',stage:'About IFAFA',q:'What events does IFAFA organise?',a:'IFAFA organises events throughout the year including the annual EUFASA conference, partner meetups in Dublin, advocacy briefings, and webinars on topics such as pensions, education, and mental health. Most events offer a remote attendance option for members abroad.',tags:['About IFAFA','Events'],link:false,linkUrl:''},
-  {id:'q28',stage:'About IFAFA',q:'When should I contact IFAFA versus DFA directly?',a:'Contact IFAFA for peer support, guidance notes, advocacy updates, and community connection. Contact DFA (HR Abroad) directly for official queries about your posting, allowances, documentation requests, or HR matters. IFAFA can help you identify the right DFA contact if you\'re unsure.',tags:['About IFAFA','Contact'],link:false,linkUrl:''},
+  {id:'q28',stage:'About IFAFA',q:'When should I contact IFAFA versus DFA directly?',a:"Contact IFAFA for peer support, guidance notes, advocacy updates, and community connection. Contact DFA (HR Abroad) directly for official queries about your posting, allowances, documentation requests, or HR matters. IFAFA can help you identify the right DFA contact if you're unsure.",tags:['About IFAFA','Contact'],link:false,linkUrl:''},
 ];
 
 var IFAFA_STAGES=['All','Before you go','While abroad','Children','Coming home','Career & money','Admin & legal','About IFAFA'];
